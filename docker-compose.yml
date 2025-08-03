@@ -24,6 +24,7 @@ services:
       - MOODLE_PASSWORD=geosentric_bn_moodle
       - MOODLE_DATABASE_PORT_NUMBER=3306
       - MOODLE_DATABASE_USER=geosentric_bn_moodle
+      - MOODLE_DATABASE_PASSWORD=geosentric_bn_moodle
       - MOODLE_DATABASE_NAME=geosentric_bitnami_moodle
       - MOODLE_EMAIL=geosentric.dev@gmail.com
       - MOODLE_SMTP_HOST=smtp.gmail.com
