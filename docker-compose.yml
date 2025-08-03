@@ -3,6 +3,7 @@ services:
     image: docker.io/bitnami/mariadb:latest
     environment:
       # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - MARIADB_ROOT_PASSWORD=geosentric_bn_moodle
       - MARIADB_USER=geosentric_bn_moodle
       - MARIADB_PASSWORD=geosentric_bn_moodle
       - MARIADB_DATABASE=geosentric_bitnami_moodle
