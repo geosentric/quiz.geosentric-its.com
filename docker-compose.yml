@@ -19,7 +19,7 @@ services:
     environment:
       - MOODLE_SITE_NAME="Geosentric ITS 2025"
       - MOODLE_LANG=id
-      - MOODLE_HOST=quiz.geosentric.com
+      - MOODLE_HOST=quiz.geosentric-its.com
       - MOODLE_DATABASE_HOST=mariadb
       - MOODLE_REVERSEPROXY=true
       - MOODLE_PASSWORD=geosentric_bn_moodle
