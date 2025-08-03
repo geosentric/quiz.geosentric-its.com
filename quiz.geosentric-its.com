@@ -1,13 +1,17 @@
 server {
     listen 80;
 
-    server_name localhost;
+    server_name quiz.geosentric-its.com;
+
+    access_log /var/log/nginx/static-geosentric-access.log;
+    error_log /var/log/nginx/static-geosentric-error.log;
 
     location / {
-        proxy_pass http://localhost:8080/;
-        proxy_set_header Host $host;
+        proxy_set_header HOST $http_host;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-NginX-Proxy true;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_pass http://localhost:8080/;
     }
 }
